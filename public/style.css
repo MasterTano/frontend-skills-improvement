@@ -271,11 +271,11 @@ nav ul li a:hover {
     }
 
     .full-width-container.bg-blue img {
-        width: 10%;
+        width: 12%;
     }
 
     .full-width-container.bg-blue ul li:nth-child(3) img {
-        width: 6%;
+        width: 8%;
         margin-top: -6px;
     }
 
@@ -322,9 +322,13 @@ nav ul li a:hover {
         margin: 0 0 5% 0;
     }
 
+    .full-width-container.bg-gray {
+        padding: 6em 0 2em;
+    }
+
     .container {
         width: 80%;
-        margin: 0 auto
+        margin: 0 auto;
     }
 
     .show-desktop {
@@ -357,5 +361,20 @@ nav ul li a:hover {
 
     nav ul li a:hover {
         background-color: inherit;
+    }
+
+    .scroll {
+        width: 50px;
+        margin: 0 auto 13% auto;
+        animation: move 2s infinite alternate;
+    }
+
+    @keyframes move {
+        0% {
+            transform: translateY(0px);
+        }
+        100% {
+            transform: translateY(20px);
+        }
     }
 }
