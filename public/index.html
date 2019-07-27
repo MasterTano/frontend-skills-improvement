@@ -105,17 +105,14 @@
         document.getElementById('menu').addEventListener('click', function(){
             toggleMenu();
         });
-        document.getElementById('exit').addEventListener('click', function(){
+        document.getElementById('exit').addEventListener('click', function(e){
             toggleMenu();
+            e.preventDefault();
         });
         function toggleMenu(){
             let className = 'hide-mobile';
             let menuList = document.querySelectorAll('nav ul')[0];
-            if (menuList.classList.contains(className)) {
-                menuList.classList.remove(className);
-                return;
-            }
-            menuList.classList.add(className);
+            menuList.classList.toggle(className);
         }
     </script>
     <!-- built files will be auto injected -->
